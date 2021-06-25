@@ -507,7 +507,7 @@ aside h2
     aside
     {   order: 1;}
 
-    article
+    .hebergements_marseille
     {   order: 2;}
 
     .blocactivites
@@ -610,7 +610,7 @@ aside h2
     {   padding: 45px 20px;
         border-radius: 0px;}
 
-    article
+    .hebergements_marseille
     {   background-color: transparent;
         padding: 0px 20px;}
 
