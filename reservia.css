@@ -1,0 +1,627 @@
+/* Définition of th style of the site */
+@font-face
+{   font-family: 'Raleway';
+    src: url('font/Raleway-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;}
+
+*
+{   font-family: 'Raleway', Arial, sans-serif;}
+
+html, body
+{   margin: auto;
+    padding: 0px;}
+
+header, main
+{   margin: 0px 45px;}
+
+.bloc_page
+{   max-width: 1440px;
+    margin: auto;}  
+
+/*header*/
+header
+{   display: grid;
+    grid-template-columns: 145px auto 300px 130px;
+    grid-template-rows: 90px 40px;
+    height: 90px;
+    margin: 0px 0px 25px 0px;}
+
+nav
+{   height: 90px;
+    grid-column: 3;
+    grid-row: 1;}
+
+.logo
+{   width: 100px;
+    margin: 30px 0px 0px 45px;
+    grid-column: 1;
+    grid-row: 1;}
+
+nav ul
+{   display: flex;
+    align-items: flex-start;
+    margin: 0px;
+    padding: 0px;
+    height: 90px;}
+
+nav li
+{   font-weight: bold;
+    list-style-type: none;}
+
+.linkhebergements
+{   display: flex;
+    margin: 0px;
+    justify-content: center;
+    border-top: #0065fc solid 2px;
+    text-decoration: none;
+    color: #0065fc;
+    font-weight: 500;}
+
+.border
+{   width: 173px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkactivites
+{   display: flex;
+    margin: 40px 30px 0px 30px;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;}
+    
+.login
+{   display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin: 40px 30px 0px 30px;
+    color: #0065FC;
+    font-weight: 650;
+    grid-column: 4;
+    grid-row: 1;}
+       
+nav a:hover
+{   color: #0065FC;}
+
+/*footer*/
+footer
+{   background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 0px 45px 45px;}
+
+footer h3
+{   margin: 50px 0px 0px 0px;
+    font-weight: 750;
+    font-size: 1rem;}
+
+footer ul
+{   list-style: none;
+    padding: 0px;}
+
+footer li
+{   padding-bottom: 10px;
+    font-size: .9rem;}
+
+footer li a:hover
+{   text-decoration: underline;}
+
+.ulfooter
+{   flex: 1;
+    display: flex;
+    flex-direction: column;}
+
+/*search bar and filters*/
+.filtrages
+{   margin: 30px 0px 0px 0px;}
+
+h1
+{   font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 5px;}
+
+.filtrages h5
+{   font-size: .9rem;
+    font-weight: 500;
+    margin: 5px 0px 25px 0px;}
+
+.searchbar
+{   display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;}
+
+.pinblock
+{   background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 45px;
+    height: 45px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;}
+
+#pinicon
+{   color: black;}
+
+.destination
+{   font-weight: bold;
+    font-size: 16px;
+    height: 42px;
+    padding: 0px 0px 0px 15px;
+    border: #f2f2f2 1.5px solid;
+    border-right: none;}
+
+.search
+{   background-color: #0065fc;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 45px;
+    padding: 0px 17px 0px 17px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    cursor: pointer;}
+
+button
+{   display: none;}
+
+.filtres
+{   max-width: 850px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 5px;}
+
+h4
+{   font-weight: bolder;
+    margin-right: 20px;}
+    
+.filterlinks
+{   display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+    border: 2px #f2f2f2 solid;
+    height: 45px;
+    border-radius: 45px;}
+
+.filterlinks p
+{   font-weight: 600;
+    margin: 0 20px;}
+
+.filterlinks i
+{   display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065fc;
+    height: 49px;
+    width: 49px;
+    margin-left: -2px;
+    background-color: #DEEBFF;
+    border-radius: 50px;}
+
+.filtres a:hover
+{   background-color: #0065fc;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 43px;
+    border-radius: 50px;
+    box-shadow: .5px .5px 10px grey;}
+
+.filtres p
+{   padding: 0px 10px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    margin: 0px;}
+
+.icons
+{   color: #0065fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45.5px;
+    width: 45.5px;
+    background-color: #DEEBFF;
+    border-radius: 50px;}
+
+.info
+{   display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px;}
+
+#i
+{   color: #0065FC;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;}
+
+.info p
+{   margin-left: 10px;
+    font-size: 15px;}
+
+/*accommodations in marseille*/
+.hebergements
+{   display: flex;
+    margin-top: 25px;
+    gap: 30px;}
+
+.hebergements_marseille
+{   background-color: #f2f2f2;
+    border-radius: 18px;
+    padding: 45px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+    
+.hebergements_marseille h2
+{   font-weight: 750;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-top: 0px;}
+
+.hebergements_marseille
+
+.blochebergements
+{   display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 20px;}
+
+.apercuhebergement 
+{   flex: 1;
+    min-width: 210px;
+    height: 170px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0px 0px .5em #d3d3d3;}
+     
+.imagehebergement
+{   height: 60%;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;}
+         
+#cannebiere
+{   background-image: url(images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);}
+    
+#port
+{   background-image: url(images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg);}
+        
+#mouettes
+{   background-image: url(images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg);}
+        
+#mer
+{   background-image: url(images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg);}
+        
+#panier
+{   background-image: url(images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);}
+        
+#amina
+{   background-image: url(images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);}
+
+.texthebergement
+{   display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 10px 0px 0px 10px;}
+    
+.texthebergement h5
+{   font-size: 15px;
+    font-weight: bold;
+    margin: 0px 0px 5px 0px;
+    flex-wrap: wrap;}
+    
+.apercuhebergement p
+{   font-size: 13px;
+    margin: 0px 0px 5px 0px;}
+    
+span
+{   font-weight: bold;}
+
+.starshebergement
+{   display: flex;
+    justify-content: flex-start;
+    margin: 0px 0px 5px 0px;
+    font-size: 10px;}
+        
+.bleu
+{   color: #0065fc;}   
+        
+.gris
+{   color: #f2f2f2;}
+
+a
+{   text-decoration: none;
+    color: black;}
+
+.afficherplus
+{   font-weight: bold;
+    color: black;
+    margin-top: 16px;}
+
+.afficherplus a:hover
+{   text-decoration : underline;
+    color: black;}
+
+/*most popular*/
+aside
+{   background-color: #f2f2f2;
+    border-radius: 18px;
+    padding: 45px 40px;}
+
+aside h2
+{   width: 300px;
+    font-weight: 750;
+    font-size: 20px;
+    margin-top: 0px;}
+
+.blocpopulaire
+{   display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;}
+
+#chart
+{   font-size: 20px;}
+
+.apercupopulaire
+{   height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0px 0px .5em #d3d3d3;}
+    
+.imagepopulaire
+{   width: 125px;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;}
+    
+#soleildumatin
+{   background-image: url(images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);}
+
+#aucoeurdeleau
+{   background-image: url(images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg);}
+
+#toutbleuetblanc
+{   background-image: url(images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg);}
+    
+.textpopulaire
+{   display: flex;
+    flex-direction: column;
+    margin: 10px 20px;}
+
+.textpopulaire h5
+{   font-size: 15px;
+    font-weight: bold;
+    margin: 0px 0px 5px 0px;
+    flex-wrap: wrap;}
+
+.apercupopulaire p
+{   font-size: 13px;
+    margin: 0px 0px 5px 0px;}
+    
+.starspopulaire
+{   font-size: 10px;
+    margin-top: 30px;}
+
+.titlepopulaires
+{   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;}
+
+/*activities in Marseille*/
+.activites
+{   margin: 30px 0px 60px 0px;}
+
+.blocactivites
+{   display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 20px;}
+
+.blocactivites h5
+{   font-size: .9rem;
+    font-weight: 800;
+    padding-left: 20px;}
+
+.blocactivites a
+{   flex: 1;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px grey;}
+
+.large
+{   height: 85%;}
+
+.mediumsmall
+{   flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;}
+
+.imageactivites
+{   background-position: center;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;}
+
+.ilarge
+{   height: 365px;}
+
+.imedium
+{   height: 160px;}
+
+.ismall
+{   height: 120px;}
+
+#vieuxport
+{   background-image: url(images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);}
+
+#pomegues
+{   background-image: url(images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg);}
+
+#frioul
+{   background-image: url(images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);}
+
+#calanques
+{   background-image: url(images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);}
+
+#notredame
+{   background-image: url(images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg);}
+
+#longchamp
+{   background-image: url(images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg);}
+
+/*media queries*/
+@media all and (max-width: 805px)
+{
+    .hebergements
+    {   flex-direction: column;}
+
+    aside
+    {   order: 1;}
+
+    article
+    {   order: 2;}
+
+    .blocactivites
+    {   flex-direction: column;}
+    
+    .blocactivites a
+    {   max-height: 180;}
+
+    .imageactivites
+    {   height: 160px;}
+}
+
+@media all and (min-width: 400px) and (max-width: 805px)
+{
+    .apercupopulaire
+        {   flex-direction: column;
+            height: 200px;}
+
+    .imagepopulaire
+    {   width: 100%;
+        height: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;}
+
+    .br
+    {   display: none;}
+
+    .starspopulaire
+    {   margin: 0px;}
+
+    .mediumsmall
+    {   flex-direction: row;}
+}
+
+@media all and (max-width: 600px)
+{
+    header, main
+    {   margin: 0px;}
+    
+    header
+    {   height: 160px;
+        grid-template-columns: auto auto auto auto;}
+    
+    nav
+    {   justify-content: center;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 4 span;
+        grid-row: 2;}
+        
+    nav ul
+    {   flex: 1;
+        height: 60px;}
+
+    .border
+    {   padding-top: 20px;}
+    
+    .linkhebergements
+    {   width: 50%;
+        height: 40px;
+        border-top: none;
+        border-bottom: #0065FC solid 4px;
+        padding-bottom: 20px;}
+
+    .linkactivites
+    {   width: 50%;
+        margin: 20px 0px;
+        border-bottom: #f2f2f2 solid 4px;
+        padding-bottom: 20px;}
+    
+    .filtrages, .activites
+    {   margin: 0px 20px;}
+    
+    .destination
+    {   width: 100%;}
+
+    button
+    {   display: unset;
+        background-color: #0065fc;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        height: 45px;
+        padding: 0px 17px 0px 17px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border: none;
+        cursor: pointer;}
+
+    .search
+    {   display: none;}
+
+    .filtres h4
+    {   min-width: 100%;}
+
+    .filterlinks
+    {   margin: 5px 0px;}
+    
+    aside
+    {   padding: 45px 20px;
+        border-radius: 0px;}
+
+    article
+    {   background-color: transparent;
+        padding: 0px 20px;}
+
+    .imageactivites
+    {   height: 120px;}
+
+    footer
+    {   flex-direction: column;
+        padding-left: 30px;
+        margin-top: 40px;}
+
+    .colonnefoulfooteroter
+    {   width: 250px;}
+}
